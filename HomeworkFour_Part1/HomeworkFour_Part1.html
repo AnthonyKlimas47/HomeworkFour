@@ -1,0 +1,44 @@
+<!-- HomeworkFour_Part1.html -->
+<!--
+Author: Anthony Klimas
+Contact: anthony_klimas@student.uml.edu
+Date: 2024-11-27
+Description: Basic Html for multiplication table
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="tableForm">
+        <label for="minCol">Min Column:</label>
+        <input type="number" id="minCol" name="minCol" required><br>
+
+        <label for="maxCol">Max Column:</label>
+        <input type="number" id="maxCol" name="maxCol" required><br>
+
+        <label for="minRow">Min Row:</label>
+        <input type="number" id="minRow" name="minRow" required><br>
+
+        <label for="maxRow">Max Row:</label>
+        <input type="number" id="maxRow" name="maxRow" required><br>
+
+        <button type="submit">Generate Table</button>
+    </form>
+
+    <div id="tableContainer"></div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!-- HomeworkFour_Part2.html -->
+<!--
+Author: Anthony Klimas
+Contact: anthony_klimas@student.uml.edu
+Date: 2024-10-31
+Description: Basic Html for multiplication table
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table Generator</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="slider-container">
+        
+        <form id="tableForm">
+            <label for="minCol">Min Column: </label><input type="number" id="minCol" name="minCol" disabled>
+            <div id="minCol-slider"></div>
+
+            <label for="maxCol">Max Column: </label><input type="number" id="maxCol" name="maxCol" disabled>
+            <div id="maxCol-slider"></div>
+            
+            <label for="minRow">Min Row: </label><input type="number" id="minRow" name="minRow" disabled>
+            <div id="minRow-slider"></div>
+
+            <label for="maxRow">Max Row: </label><input type="number" id="maxRow" name="maxRow" disabled>
+            <div id="maxRow-slider"></div>
+
+            <div id="error-message" style="color: red; display: none;">Please ensure that the min values are less than or equal to the max values!</div>
+
+            <button type="submit" disabled>Generate Table</button>
+            <button type="button" id="clearTabs">Remove All Tabs</button>
+        </form>
+    </div>
+
+    
+    <div id="tabs">
+        <ul>
+            <li><a href="#tab-1">Generate Table</a></li>
+        </ul>
+        <div id="tab-1">
+            
+            <div id="dynamicTable"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+

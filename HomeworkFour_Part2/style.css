@@ -1,0 +1,118 @@
+/* style.css */
+/*
+Author: Anthony Klimas
+Contact: anthony_klimas@student.uml.edu
+Date: 2024-11-27
+Description: This file styles the multiplication table so it is easier for the user to read once inputs are complete.
+*/
+#dynamicTableContainer {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+/* Styling for the table */
+table.multiplication-table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+    /* Table headers */
+    table.multiplication-table th {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+    }
+
+    /* Table cells */
+    table.multiplication-table td {
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+    }
+
+    /* Zebra striping for table rows */
+    table.multiplication-table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    /* Table row hover effect */
+    table.multiplication-table tr:hover {
+        background-color: #ddd;
+    }
+
+/* Padding for the table container */
+#dynamicTableContainer {
+    padding: 20px;
+    background-color: #fafafa; 
+    border-radius: 8px; 
+}
+
+/* Adjust the width of the table container */
+#dynamicTableContainer {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* Error message styling */
+#error-message {
+    font-size: 14px;
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Style for sliders and inputs */
+input[type="number"] {
+    width: 60px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Slider container styling */
+#minCol-slider, #maxCol-slider, #minRow-slider, #maxRow-slider {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Buttons styling */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+    /* Button hover effect */
+    button:hover {
+        background-color: #45a049;
+    }
+
+    /* Button disabled state */
+    button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+
+
+
+
+
+
